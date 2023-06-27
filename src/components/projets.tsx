@@ -7,6 +7,29 @@ export default function Projets({ innerRef }: RefProps) {
 			className="bg-purple-600 flex min-h-screen w-full flex-col items-center justify-between"
 		>
 			About
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
+			<p>asasdfasd</p>
 		</section>
 	);
 }
