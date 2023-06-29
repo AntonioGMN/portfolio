@@ -58,8 +58,8 @@ export default function Home() {
 	console.log("onFocus", onFocus);
 
 	return (
-		<main className="bg-emerald-400 flex min-h-screen flex-col items-center justify-between px-5">
-			<div className="fixed left-0 top-0 h-screen bg-gray-800 w-16 flex flex-col items-center justify-center">
+		<main className="bg-emerald-400 min-h-screen flex flex-col items-center justify-between px-14">
+			<div className="fixed left-0 top-0 h-screen w-16 flex flex-col items-center justify-center">
 				<button
 					className="text-white"
 					onClick={() => {
