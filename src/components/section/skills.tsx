@@ -4,7 +4,7 @@ import SectionTitle from "../h1/SectionTitle";
 
 export default function Skills({ innerRef }: RefProps) {
 	return (
-		<section ref={innerRef} className=" flex  w-full flex-col px-16">
+		<section ref={innerRef} className="w-full flex flex-col px-16">
 			<SectionTitle>Minhas Skills</SectionTitle>
 			<div className="w-full h-full grid justify-items-center grid-cols-4 gap-4">
 				<Article>
@@ -44,7 +44,7 @@ export default function Skills({ innerRef }: RefProps) {
 
 function Article({ children }: PropsWithChildren) {
 	return (
-		<article className="w-52 h-52 bg-emerald-400 flex justify-center items-center text-xl rounded-full">
+		<article className="w-52 h-52 bg-emerald-400 flex justify-center items-center text-xl rounded-full shadow-2xl">
 			{children}
 		</article>
 	);
