@@ -13,12 +13,14 @@ export default function ProjectsCarousel({ obj }: CarouselProps) {
 	return (
 		<Carousel
 			showArrows={true}
+			showThumbs={false}
 			showIndicators={true}
 			infiniteLoop={true}
 			dynamicHeight={false}
+			autoPlay={true}
 		>
 			{obj.imgs.map((imgUrl) => (
-				<Image key={"asdf"} src={imgUrl} alt="slides" className="h-80 w-full" />
+				<Image key={"asdf"} src={imgUrl} alt="slides" className="h-full w-full" />
 			))}
 		</Carousel>
 	);

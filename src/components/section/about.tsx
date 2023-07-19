@@ -2,6 +2,7 @@ import RefProps from "@/interfaces/refInterface";
 import profileImage from "../../../public/foto.jpeg";
 import Image from "next/image";
 import SectionTitle from "../h1/SectionTitle";
+import downLoad from "../../../public/cv";
 
 export default function About({ innerRef }: RefProps) {
 	return (
