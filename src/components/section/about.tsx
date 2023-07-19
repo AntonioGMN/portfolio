@@ -2,7 +2,6 @@ import RefProps from "@/interfaces/refInterface";
 import profileImage from "../../../public/foto.jpeg";
 import Image from "next/image";
 import SectionTitle from "../h1/SectionTitle";
-import downLoad from "../../../public/cv";
 
 export default function About({ innerRef }: RefProps) {
 	return (
@@ -28,9 +27,11 @@ export default function About({ innerRef }: RefProps) {
 						</p>
 					</div>
 					<div className="flex gap-3 mt-4">
-						<button className="w-48 h-12 p-2 bg-emerald-400 text-white font-medium">
-							Downloud Curriculo
-						</button>
+						<a href={"/cv.pdf"} download="curriculo-Antonio-Garcia" target="_blank">
+							<button className="w-48 h-12 p-2 bg-emerald-400 text-white font-medium">
+								Downloud Curriculo
+							</button>
+						</a>
 						<button className="h-12 w-48 p-2 bg-emerald-400 text-white font-medium">
 							Entre em contato
 						</button>
