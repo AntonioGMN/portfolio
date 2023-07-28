@@ -9,7 +9,6 @@ interface CarouselProps {
 }
 
 export default function ProjectsCarousel({ obj }: CarouselProps) {
-	console.log(obj);
 	return (
 		<Carousel
 			showArrows={true}
@@ -18,9 +17,10 @@ export default function ProjectsCarousel({ obj }: CarouselProps) {
 			infiniteLoop={true}
 			dynamicHeight={false}
 			autoPlay={true}
+			className="h-full w-2/4"
 		>
 			{obj.imgs.map((imgUrl) => (
-				<Image key={"asdf"} src={imgUrl} alt="slides" className="h-full w-full" />
+				<Image key={"asdf"} src={imgUrl} alt="slides" />
 			))}
 		</Carousel>
 	);

@@ -6,14 +6,15 @@ export default function Introduction({ innerRef }: RefProps) {
 	return (
 		<section
 			ref={innerRef}
-			className="bg-gradient-to-r from-emerald-400 to-indigo-700 w-full h-3/5  flex items-center"
+			className="bg-gradient-to-r from-emerald-400 to-indigo-700 w-full h-2/5  flex items-center
+			"
 		>
-			<div className="flex flex-col w-full">
-				<h1 className="font-medium text-4xl">Bem vindo ao meu WebSite</h1>
-				<h1 className="font-medium text-4xl text-center">
+			<div className="flex flex-col w-full text-center">
+				<h1 className="font-medium text-4xl ">Bem vindo ao meu WebSite</h1>
+				<h1 className="font-medium text-4xl ">
 					Eu me chamo <br /> Antonio Garcia
 				</h1>
-				<h2 className="flex font-medium text-2xl my-8 text-center">
+				<h2 className="font-medium text-3xl my-8 ">
 					Sou um desenvolvedor Full Stack
 				</h2>
 			</div>

@@ -1,17 +1,17 @@
 import RefProps from "@/interfaces/refInterface";
-import profileImage from "../../../public/foto.jpeg";
+import profilePhoto from "../../../public/profilePhoto.jpeg";
 import Image from "next/image";
-import SectionTitle from "../h1/SectionTitle";
+import SectionTitle from "../texts/SectionTitle";
 
 export default function About({ innerRef }: RefProps) {
 	return (
 		<section
 			ref={innerRef}
-			className="px-16 flex flex-col  w-full   text-emerald-400"
+			className="px-16 flex flex-col  w-full   text-emerald-500"
 		>
 			<SectionTitle>Sobre Mim</SectionTitle>
 			<div className="flex ">
-				<Image src={profileImage} className="h-80 w-72" alt="erro" />
+				<Image src={profilePhoto} className="h-80 w-72 mr-4" alt="erro" />
 				<div>
 					<div>
 						<p className="font-semibold">
@@ -32,9 +32,11 @@ export default function About({ innerRef }: RefProps) {
 								Downloud Curriculo
 							</button>
 						</a>
-						<button className="h-12 w-48 p-2 bg-emerald-400 text-white font-medium">
-							Entre em contato
-						</button>
+						<a href="https://wa.me/5584988456636" target="_blank">
+							<button className="h-12 w-48 p-2 bg-emerald-400 text-white font-medium">
+								Entre em contato
+							</button>
+						</a>
 					</div>
 				</div>
 			</div>

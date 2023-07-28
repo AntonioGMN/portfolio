@@ -1,6 +1,6 @@
 import RefProps from "@/interfaces/refInterface";
 import { PropsWithChildren } from "react";
-import SectionTitle from "../h1/SectionTitle";
+import SectionTitle from "../texts/SectionTitle";
 
 export default function Skills({ innerRef }: RefProps) {
 	return (
