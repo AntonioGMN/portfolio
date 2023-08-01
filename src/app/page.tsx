@@ -101,6 +101,7 @@ export default function Home() {
 			<About innerRef={aboutRef} />
 			<Skills innerRef={skillsRef} />
 			<Projets innerRef={projetsRef} />
+
 			<ContactMe />
 		</main>
 	);

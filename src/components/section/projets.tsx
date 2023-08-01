@@ -7,13 +7,11 @@ import Linkr from "../../../public/projects/linkr";
 import Shorty from "../../../public/projects/sortly";
 import Projects from "@/interfaces/projects";
 import Link from "next/link";
+import Container from "../containers/conteiner";
 
 export default function Projets({ innerRef }: RefProps) {
 	return (
-		<section
-			ref={innerRef}
-			className="w-full px-16 flex flex-col justify-between mb-12"
-		>
+		<Container>
 			<SectionTitle>Meus Projetos</SectionTitle>
 			<section className="flex flex-col gap-4">
 				<Article>
@@ -29,19 +27,21 @@ export default function Projets({ innerRef }: RefProps) {
 					<ProjetctDescribe project={Shorty} />
 				</Article>
 			</section>
-		</section>
+		</Container>
 	);
 }
 
 function Article({ children }: PropsWithChildren) {
 	return (
-		<article className="w-full flex shadow-2xl  p-4 rounded">{children}</article>
+		<article className="w-full flex flex-col md:flex-row shadow-2xl md:p-4 rounded">
+			{children}
+		</article>
 	);
 }
 
 function ProjetctDescribe({ project }: { project: Projects }) {
 	return (
-		<div className="flex flex-col flex-1 ml-5 text-black relative">
+		<div className="flex flex-col flex-1 md:ml-5 text-black relative">
 			<ProjectName>{project.name}</ProjectName>
 			{project.describe.map((text, i) => (
 				<p key={i}>{text}</p>
@@ -51,7 +51,7 @@ function ProjetctDescribe({ project }: { project: Projects }) {
 			<Link
 				href={project.gitHubUrl}
 				target="_blank"
-				className="absolute bottom-0 right-0"
+				className="text-right m-2 md:absolute bottom-0 right-0"
 			>
 				saiba mais
 			</Link>

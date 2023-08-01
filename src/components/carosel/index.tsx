@@ -17,7 +17,7 @@ export default function ProjectsCarousel({ obj }: CarouselProps) {
 			infiniteLoop={true}
 			dynamicHeight={false}
 			autoPlay={true}
-			className="h-full w-2/4"
+			className="h-full w-full md:w-2/4"
 		>
 			{obj.imgs.map((imgUrl) => (
 				<Image key={"asdf"} src={imgUrl} alt="slides" />

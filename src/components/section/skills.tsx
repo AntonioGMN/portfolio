@@ -1,12 +1,13 @@
 import RefProps from "@/interfaces/refInterface";
 import { PropsWithChildren } from "react";
 import SectionTitle from "../texts/SectionTitle";
+import Container from "../containers/conteiner";
 
 export default function Skills({ innerRef }: RefProps) {
 	return (
-		<section ref={innerRef} className="w-full flex flex-col px-16">
-			<SectionTitle>Minhas Skills</SectionTitle>
-			<div className="w-full h-full grid justify-items-center grid-cols-4 gap-4">
+		<Container>
+			<SectionTitle>Skills</SectionTitle>
+			<div className="w-full h-full flex flex-col md:grid md:justify-items-center md:grid-cols-4 gap-4">
 				<Article>
 					<ul>
 						<li>Node</li>
@@ -38,13 +39,13 @@ export default function Skills({ innerRef }: RefProps) {
 					</ul>
 				</Article>
 			</div>
-		</section>
+		</Container>
 	);
 }
 
 function Article({ children }: PropsWithChildren) {
 	return (
-		<article className="w-52 h-52 bg-emerald-400 flex justify-center items-center text-xl rounded-full shadow-2xl">
+		<article className="w-full h-28 md:w-52 md:h-52 bg-emerald-400 flex justify-center items-center text-center text-lg md:text-xl rounded-2xl md:rounded-full shadow-2xl">
 			{children}
 		</article>
 	);

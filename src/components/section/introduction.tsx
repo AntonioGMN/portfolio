@@ -1,20 +1,23 @@
 import RefProps from "@/interfaces/refInterface";
+import { PropsWithChildren } from "react";
 
 export default function Introduction({ innerRef }: RefProps) {
 	return (
 		<section
 			ref={innerRef}
-			className=" flex items-center bg-introductionBG w-full h-2/5 bg-cover"
+			className="flex flex-col justify-evenly bg-introductionBG w-full h-2/5 bg-cover "
 		>
-			<div className="flex flex-col w-full text-center">
-				<h1 className="font-medium text-4xl ">Bem vindo ao meu WebSite</h1>
-				<h1 className="font-medium text-5xl ">
-					Me chamo <br /> Antonio Garcia
-				</h1>
-				<h2 className="font-medium text-4xl my-8 ">
-					Sou um desenvolvedor Full Stack
-				</h2>
-			</div>
+			<LargeText>Bem vindo ao meu WebSite</LargeText>
+			<LargeText>
+				Me chamo <br /> Antonio Garcia
+			</LargeText>
+			<LargeText>Sou um desenvolvedor Full Stack</LargeText>
 		</section>
+	);
+}
+
+function LargeText({ children }: PropsWithChildren) {
+	return (
+		<p className="text-center text-3xl font-medium md:text-4xl">{children}</p>
 	);
 }
