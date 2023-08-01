@@ -13,6 +13,9 @@ module.exports = {
 			width: {
 				introductionSection: "600px",
 			},
+			backgroundImage: {
+				introductionBG: "url('/introduction-bg.jpg')",
+			},
 		},
 	},
 	plugins: [],
