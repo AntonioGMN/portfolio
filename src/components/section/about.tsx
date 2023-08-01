@@ -1,4 +1,3 @@
-import RefProps from "@/interfaces/refInterface";
 import profilePhoto from "../../../public/profilePhoto.jpeg";
 import Image from "next/image";
 import Container from "../containers/conteiner";
@@ -6,7 +5,7 @@ import SectionTitle from "../texts/SectionTitle";
 import GreenText from "../texts/greenText";
 import { PropsWithChildren } from "react";
 
-export default function About({ innerRef }: RefProps) {
+export default function About() {
 	return (
 		<Container>
 			<SectionTitle>Sobre Mim</SectionTitle>

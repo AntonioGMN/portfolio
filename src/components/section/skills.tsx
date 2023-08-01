@@ -1,9 +1,8 @@
-import RefProps from "@/interfaces/refInterface";
 import { PropsWithChildren } from "react";
 import SectionTitle from "../texts/SectionTitle";
 import Container from "../containers/conteiner";
 
-export default function Skills({ innerRef }: RefProps) {
+export default function Skills() {
 	return (
 		<Container>
 			<SectionTitle>Skills</SectionTitle>

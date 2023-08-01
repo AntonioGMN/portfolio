@@ -1,4 +1,3 @@
-import RefProps from "@/interfaces/refInterface";
 import SectionTitle from "../texts/SectionTitle";
 import ProjectsCarousel from "../carosel";
 import Tegrafood from "../../../public/projects/tegrafood";
@@ -9,7 +8,7 @@ import Projects from "@/interfaces/projects";
 import Link from "next/link";
 import Container from "../containers/conteiner";
 
-export default function Projets({ innerRef }: RefProps) {
+export default function Projets() {
 	return (
 		<Container>
 			<SectionTitle>Meus Projetos</SectionTitle>

@@ -1,12 +1,8 @@
-import RefProps from "@/interfaces/refInterface";
 import { PropsWithChildren } from "react";
 
-export default function Introduction({ innerRef }: RefProps) {
+export default function Introduction() {
 	return (
-		<section
-			ref={innerRef}
-			className="flex flex-col justify-evenly bg-introductionBG w-full h-2/5 bg-cover "
-		>
+		<section className="flex flex-col justify-evenly bg-introductionBG w-full h-2/5 bg-cover ">
 			<LargeText>Bem vindo ao meu WebSite</LargeText>
 			<LargeText>
 				Me chamo <br /> Antonio Garcia
