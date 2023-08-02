@@ -11,7 +11,7 @@ import Container from "../containers/conteiner";
 export default function Projets() {
 	return (
 		<Container>
-			<SectionTitle>Meus Projetos</SectionTitle>
+			<SectionTitle>Projetos</SectionTitle>
 			<section className="flex flex-col gap-4">
 				<Article>
 					<ProjectsCarousel obj={Tegrafood} />
